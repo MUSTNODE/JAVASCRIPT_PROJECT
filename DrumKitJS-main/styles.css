@@ -1,0 +1,76 @@
+body {
+  background-color: #333;
+}
+/* fullscreen */
+.drumImg {
+  margin: 60px 0 0 0;
+  width: 600px;
+  height: 600px;
+}
+
+@media (max-width: 1500px) and (min-width: 377px) {
+  .drumImg {
+    margin: 50px 0 0 0;
+    width: 600px;
+    height: 600px;
+  }
+}
+
+/* phone */
+@media (max-width: 376px) {
+  .drumImg {
+    margin: 50px 0 0 0;
+    width: 370px;
+    height: 370px;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Baloo Tammudo 2";
+  margin-left: 200px;
+  grid-gap: 150px;
+}
+
+li > img {
+  box-shadow: 5px 5px 10px 4px black;
+}
+
+.keys {
+  background-color: #ccc;
+  width: 280px;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 10px 0px black;
+  font-family: "Baloo Tammudo 2";
+}
+
+.keys li {
+  list-style: none;
+  font-family: "Baloo Tammudu 2";
+  font-size: 16px;
+}
+
+.key-pic-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 0 10px 0;
+  grid-gap: 10px;
+}
+
+.key-pic-container li > img {
+  margin-right: 1px;
+}
+
+.keys p {
+  font-family: "Baloo Tammudo 2";
+  text-align: center;
+  font-size: 30px;
+}
+
+.underline {
+  width: 280px;
+  background-color: black;
+  height: 2px;
+}

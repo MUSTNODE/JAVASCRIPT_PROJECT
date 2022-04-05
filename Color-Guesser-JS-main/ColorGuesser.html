@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Color Guessing Game</title>
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30vh;
+  font-family: sans-serif;
+  color: black;
+  text-align: center;
+}
+
+.whatColor {
+  margin-top: 30px;
+}
+
+.title {
+  margin-bottom: 35px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  border: 2px black solid;
+  font-size: 14px;
+  padding: 3px 3px 3px 3px;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  background: blue;
+}
+
+.guess {
+  box-shadow: 5px 5px 5px 2px black;
+}
+
+.win-message {
+  margin-top: 30px;
+  color: green;
+}
+
+.loss-message {
+  color: red;
+}
+
+.guesses {
+  font-size: 10px;
+  margin-top: 20px;
+}
+
+</style>
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>Color Guessing Game</h1>
+      <p class="whatColor">What color am I thinking of?</p>
+      <p class="options">(options: black, blue, cyan, green, pink, purple, red, white, yellow)</p>
+    </div>
+    <input type="text" class='guess'>
+    <input type="submit" value="Guess!" class='submit-btn'>
+    <div class="win-message"></div>
+    <div class="loss-message"></div>
+    <div class="includes"></div>
+    <div class="guesses"></div>
+    <div class="closeness"></div>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
